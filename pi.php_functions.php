@@ -3,7 +3,7 @@
 /*
 =============================================================
  PHP Functions Plugin
- by: Jonathan Kelly, Paramore|Redd Online Marketing
+ by: Jonathan Kelly, Jesse Bunch - Paramore|Redd Online Marketing
  http://paramoreredd.com/
  Copyright (c) Paramore|Redd Online Marketing
 =============================================================
@@ -44,8 +44,10 @@ class PHP_Functions {
 	/**
 	 * Constructor class (for PHP4-PHP5)
 	 * Gets the object ready to use by performing basic functions
+	 * @access public
 	 * @param void
 	 * @return void
+	 * @author Jonathan W. Kelly
 	 **/ 
 	public function PHP_Functions() {
 
@@ -60,8 +62,10 @@ class PHP_Functions {
 	/**
 	 * PHP str_replace() alias. See php.net/str_replace for documentation.
 	 * USAGE: {exp:php_functions:__str_replace search="%%VARIABLE%%" replace="{embed='includes/.content'}"}{custom_field_name}{/exp:php_functions:__str_replace}
+	 * @access public
 	 * @param void
 	 * @return string
+	 * @author Jonathan W. Kelly
 	 **/
 	public function __str_replace() {
 		
