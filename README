@@ -1,0 +1,17 @@
+This plugin allows you to use call certain PHP functions vicariously through EE templates, and pass in as parameters the arguments for the function.
+
+--------------------------------
+
+String Replace : Alias of str_replace()
+
+{exp:php_functions:__str_replace search="foo" replace="barr"}search subject goes here{exp:php_functions:__str_replace}
+
+OR
+
+{exp:php_functions:__str_replace search="%%VARIABLE%%" replace="{embed='includes/content-tpl'}"}{custom_field_name}{/exp:php_functions:__str_replace}
+
+--------------------------------
+
+String Position : Alias of strpos()
+
+{exp:php_functions:__strpos needle="my" haystack="mystring"}
